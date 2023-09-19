@@ -2,7 +2,9 @@ pipeline{
 	agent any
 	stages{
 		stage("Clone the project") {
-      git branch: 'master', url: 'https://github.com/bachirNdiaye1996/projetcicdFront.git'
+      steps{
+        git branch: 'master', url: 'https://github.com/bachirNdiaye1996/projetcicdFront.git'
+      }
     }
 		stage('build'){
 		    steps{
