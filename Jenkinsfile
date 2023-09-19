@@ -18,7 +18,7 @@ pipeline{
 		    steps{
 				sh 'sudo rm -rv /var/www/html/test'
 				sh 'sudo mkdir -p /var/www/html/test'
-				sh 'sudo cp -rv ./dist/projetcicdFront/* /var/www/html/test'
+				sh 'sudo cp -rv ./projetcicdFront/* /var/www/html/test'
 			}
 		}
 	}
